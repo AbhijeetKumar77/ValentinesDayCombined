@@ -1,0 +1,58 @@
+body{
+    background: #FC5C7D;
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+img {
+    height: 300px !important;
+}
+@media screen and (max-width: 600px) {
+    img {
+        height: 200px !important;
+    }
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+@keyframes increase-decrease {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.col-4 img, .col-6 img {
+    animation: increase-decrease 7s ease infinite alternate;
+}
+@font-face {
+    font-family: 'customfont';
+    src: url('CHERI___.TTF') format('truetype');
+}
+
+.text {
+    font-size: 1.5em;
+    font-family: 'customfont', sans-serif;
+    color: white;
+    font-weight: bold;
+    word-wrap: break-word;
+}

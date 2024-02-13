@@ -1,0 +1,55 @@
+body {
+  background-image: url(https://assets.codepen.io/4927073/Group2.png), url(https://assets.codepen.io/4927073/Background6.png);
+  background-image: url(https://assets.codepen.io/4927073/Group2.png), linear-gradient(33deg, #edf2f7, #edf2f7);
+  background-image: url(https://assets.codepen.io/4927073/Group2.png),  linear-gradient(33deg, #2c303a, #2c303a);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.envelope {
+  width: 100%;
+  max-width: 430px;
+  position: relative;
+  /* filter: drop-shadow(1.5px 0.75px 1.75px #4d4d4d); */
+  z-index: 1;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+}
+
+@font-face {
+  font-family: 'customfont';
+  src: url('CHERI___.TTF') format('truetype');
+}
+
+.click-text {
+  font-size: 1em;
+  font-family: 'customfont', sans-serif;
+  color: maroon;
+  font-weight: bold;
+  word-wrap: break-word;
+  text-align: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+@keyframes float {
+  0% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translateY(0px);
+  }
+  50% {
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      transform: translateY(-20px);
+  }
+  100% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translateY(0px);
+  }
+}
+
+.animation {
+  animation: float 6s ease-in-out infinite;
+}

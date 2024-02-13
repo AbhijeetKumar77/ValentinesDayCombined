@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'customfont';
+    src: url('CHERI___.TTF') format('truetype');
+}
+
+.text {
+    font-size: 1.5em;
+    font-family: 'customfont', sans-serif;
+    color: white;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#image1{
+    height: 200px !important;
+}
+#image2{
+    height: 200px !important;
+}
+@media screen and (min-width: 1024px) {
+    #image1 {
+        height: auto !important;
+        width: 40% !important;
+        margin-left: 350px;
+    }
+}
